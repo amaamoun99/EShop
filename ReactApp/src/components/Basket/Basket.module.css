@@ -1,0 +1,75 @@
+/* Basket.module.css */
+
+/* Container for the entire basket */
+.basketContainer {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #f4f4f4; /* Neutral background color */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    color: #333; /* Dark text color for readability */
+    font-family: 'Helvetica Neue', Arial, sans-serif; /* Clean and modern font */
+}
+
+/* Title of the basket */
+.basketContainer h1 {
+    text-align: center;
+    font-size: 2em; /* Balanced title size */
+    margin-bottom: 15px;
+    color: #333; /* Dark color for contrast */
+}
+
+/* User name */
+.basketContainer h2 {
+    text-align: center;
+    font-size: 1.2em; /* Slightly smaller user name size */
+    color: #555; /* Medium gray color for the user name */
+    margin-bottom: 20px; /* Space below user name */
+}
+
+/* Container for list of products */
+.basketItems {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px; /* Space between items */
+}
+
+/* Style for each product card */
+.basketItem {
+    background: #fff; /* White background for cards */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for cards */
+    transition: transform 0.2s ease, box-shadow 0.2s ease; /* Smooth transition for hover effect */
+    color: #333; /* Dark text color for readability */
+    font-family: 'Arial', sans-serif; /* Clean font for product cards */
+    text-align: center; /* Center align text */
+}
+
+/* Hover effect for product cards */
+.basketItem:hover {
+    transform: translateY(-5px); /* Subtle lift effect on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* More pronounced shadow on hover */
+}
+
+/* Title of the product */
+.basketItem h2 {
+    margin-top: 0;
+    font-size: 1.2em; /* Balanced font size */
+    color: #333; /* Dark color for titles */
+}
+
+/* Description of the product */
+.basketItem p {
+    margin: 10px 0;
+    color: #666; /* Medium gray color for descriptions */
+}
+
+/* Price of the product */
+.basketItem p:last-child {
+    font-weight: bold;
+    font-size: 1.1em; /* Slightly larger font size for price */
+    color: #333; /* Dark color for price */
+}

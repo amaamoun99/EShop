@@ -1,0 +1,59 @@
+/* AllProducts.module.css */
+
+/* Container for the entire product list page */
+.productList {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line */
+    justify-content: center; /* Center align items horizontally */
+    padding: 20px;
+    gap: 20px; /* Space between cards */
+    background-color: #f9f9f9; /* Light background color */
+}
+
+/* Styling for each product card */
+.productCard {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    width: 280px; /* Fixed width for consistent card sizes */
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+}
+
+.productCard:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Product name styling */
+.productCard h1 {
+    font-size: 1.4em;
+    margin: 0;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Product description styling */
+.productCard h2 {
+    font-size: 1.1em;
+    color: #666;
+    margin: 8px 0;
+}
+
+/* Product price styling */
+.productCard h3 {
+    font-size: 1.3em;
+    color: #000;
+    margin: 8px 0;
+    font-weight: 700;
+}
+
+/* Loading and error message styling */
+.productList p {
+    font-size: 1.2em;
+    color: #444;
+    text-align: center;
+    margin-top: 20px;
+}
